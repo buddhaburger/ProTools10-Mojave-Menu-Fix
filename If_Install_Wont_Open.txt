@@ -1,0 +1,28 @@
+"Install.command could not be executed... you do not have
+appropriate access privileges" — or double-clicking does nothing?
+
+This happens when the download stripped the file's "runnable" flag.
+Fix it once in Terminal (10 seconds):
+
+  1. Open Terminal  (Applications > Utilities > Terminal)
+  2. Type this, WITH a space after +x, but DON'T press Return yet:
+
+         chmod +x 
+
+  3. Drag the "Install.command" file from Finder onto the Terminal
+     window. Its path appears automatically.
+  4. Press Return. (No message = success.)
+  5. Double-click Install.command again — it now runs.
+
+Tip: the installer automatically re-arms Uninstall.command for you,
+so you only ever need to do this for Install.command itself.
+
+----------------------------------------------------------------
+FIRST-LAUNCH SECURITY WARNING (normal, not an error)
+----------------------------------------------------------------
+The first time it runs, macOS may say the file is "from an
+unidentified developer." This is expected for free community tools.
+
+  Right-click Install.command  >  Open  >  Open
+
+You only need to do this once.
